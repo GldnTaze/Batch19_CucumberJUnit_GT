@@ -1,5 +1,6 @@
 package com.euroTech.step_definitions;
 
+import com.euroTech.utilites.BrowserUtils;
 import com.euroTech.utilites.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -23,7 +24,7 @@ public class Hooks {
           final   byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
           scenario.attach(screenshot ,"image/png","screenshot");
         }
-
+        BrowserUtils.waitFor(2);
         Driver.closeDriver();
 
     }
