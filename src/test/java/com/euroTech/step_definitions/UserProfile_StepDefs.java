@@ -46,6 +46,8 @@ public class UserProfile_StepDefs {
     @Then("The user should be able to verify added education record with {string}")
     public void the_user_should_be_able_to_verify_added_education_record_with(String schoolName) {
   userProfilePage.verifyLastAddedSchoolRecordWithSchoolName(schoolName);
+
+
     }
     @Then("The user should be able to delete last added education record with {string}")
     public void the_user_should_be_able_to_delete_last_added_education_record_with(String schoolName) {

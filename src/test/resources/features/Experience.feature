@@ -10,7 +10,7 @@ Feature: Experience Tests
     Then The user should be able to verify add experience form labels with following list
       | Job Title *     |
       | Company *       |
-      | Location        |
+      | Location     |
       | From Date       |
       | To Date         |
       | Job Description |
