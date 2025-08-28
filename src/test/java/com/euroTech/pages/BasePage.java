@@ -13,7 +13,7 @@ import java.util.List;
 public abstract class BasePage {
     public BasePage(){
         PageFactory.initElements(Driver.get(), this);
-    } //constroktor
+    } //constroktor finde element kullanmak iciin
     @FindBy(css = ".breadcrumb>li:nth-of-type(2)")
     private WebElement pageTitleWithTab;
 
